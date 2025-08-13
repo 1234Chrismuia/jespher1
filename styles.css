@@ -1,0 +1,262 @@
+/* assets/styles.css - Modern Tech Company Styles */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fc;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #0b2340;
+    color: #fff;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    float: left;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 28px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 0;
+    transition: color 0.2s;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color: #ffd700;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background: #0b2340;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: inline;
+    }
+    .logo, nav {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+.hero {
+    background: linear-gradient(120deg, #0b2340 60%, #1d4fa2 100%);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+.btn {
+    background: #ffd700;
+    color: #0b2340;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #f5c518;
+}
+
+.features {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 36px;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.feature-card {
+    background: #f7f8fc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 28px 22px;
+    flex: 1 1 260px;
+    min-width: 220px;
+    max-width: 320px;
+}
+.feature-card h3 {
+    color: #1d4fa2;
+    margin-bottom: 12px;
+}
+
+.page-section {
+    padding: 60px 0;
+    background: #fff;
+}
+.page-section h1, .page-section h2 {
+    color: #0b2340;
+}
+
+.team-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.team-card {
+    background: #f7f8fc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+.team-card h3 {
+    margin: 0 0 6px 0;
+}
+
+.services-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: #f7f8fc;
+    border-radius: 10px;
+    padding: 22px 18px;
+    flex: 1 1 200px;
+    min-width: 180px;
+    max-width: 260px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    text-align: center;
+}
+.service-card h3 {
+    color: #1d4fa2;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact-form label {
+    font-weight: 500;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1em;
+}
+.contact-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #0b2340;
+    color: #fff;
+    padding: 24px 0;
+    text-align: center;
+}
+/* Add to existing styles.css below previous content */
+
+.projects, .testimonials {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.projects h2, .testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 36px;
+}
+.project-list, .testimonial-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-card, .testimonial-card {
+    background: #f7f8fc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 28px 22px;
+    flex: 1 1 260px;
+    min-width: 220px;
+    max-width: 320px;
+    margin-bottom: 18px;
+}
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 12px;
+}
+.testimonial-card span {
+    display: block;
+    font-size: 0.95em;
+    color: #1d4fa2;
+}
