@@ -37,7 +37,8 @@
             </div>
         </div>
     </section>
-    <?php include 'partials/footer.php'; ?>
-    <script src="assets/scripts.js"></script>
+    <?php include 'footer.php'; ?>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
